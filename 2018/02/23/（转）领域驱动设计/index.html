@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  [TOC] 软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在">
+<meta name="description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在前期分析时就">
 <meta name="keywords" content="项目设计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="（转）领域驱动设计">
 <meta property="og:url" content="http://blog.yangmiemiemie.top/2018/02/23/（转）领域驱动设计/index.html">
 <meta property="og:site_name" content="咩咩咩的个人站">
-<meta property="og:description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  [TOC] 软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在">
+<meta property="og:description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在前期分析时就">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-23T01:46:39.000Z">
+<meta property="og:updated_time" content="2018-02-23T01:52:48.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="（转）领域驱动设计">
-<meta name="twitter:description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  [TOC] 软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在">
+<meta name="twitter:description" content="原文地址：  https://www.jianshu.com/p/b6ec06d6b594作者：Pursue  软件开发 VS DDD一般软件设计或者说软件开发分两种：瀑布式，敏捷式。 前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在前期分析时就">
 
 
 
@@ -262,7 +262,7 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-23T09:47:31+08:00">
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-02-23T09:53:06+08:00">
                 2018-02-23
               </time>
             
@@ -326,7 +326,6 @@
 <blockquote>
 <p>原文地址：  <a href="https://www.jianshu.com/p/b6ec06d6b594" target="_blank" rel="noopener">https://www.jianshu.com/p/b6ec06d6b594</a><br>作者：Pursue</p>
 </blockquote>
-<p>[TOC]</p>
 <h2 id="软件开发-VS-DDD"><a href="#软件开发-VS-DDD" class="headerlink" title="软件开发 VS DDD"></a>软件开发 VS DDD</h2><p>一般软件设计或者说软件开发分两种：瀑布式，敏捷式。</p>
 <p>前者一般是项目经理经过大量的业务分析后，会基于现有需求整理出一个基本模型，再将结果传递给开发人员，这就是开发人员的需求文档，他们只需要照此开发便是。这种模式下，是很难频繁的从用户那里得到反馈，因此在前期分析时就已经默认了这个业务模型是正确的，那么结果可想而之，数月甚至数年后交付的时候，必然和客户的预期差距较大。</p>
 <p>后者在此基础上进行了改进，它也需要大量的分析，范围会设计到更精细的业务模块，它是小步迭代，周期性交付，那么获取客户的反馈也就比较频繁和及时。可敏捷也不能够将业务中的方方面面都考虑到，并且敏捷是拥抱变化的，大量的需求或者业务模型变更必将带来不小的维护成本，同时，对人的要求也必然会更高。</p>
@@ -370,22 +369,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2018/02/08/hello-world/" rel="next" title="Hello World">
-                <i class="fa fa-chevron-left"></i> Hello World
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -459,7 +442,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">2</span>
+                  <span class="site-state-item-count">1</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
